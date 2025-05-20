@@ -10,8 +10,10 @@ h1 {
 
 h2 {
     text-align: center;
-    font-weight: bold;
+    font-weight: lighter;
     color: #FFC857;
+    padding-right: 60px;
+    padding-left: 60px;
 }
 
 p{
@@ -20,6 +22,16 @@ p{
     padding-left:30px;
     padding-right:30px;
     word-wrap: normal;
+    -webkit-text-size-adjust: 16pt;
+}
+
+img{
+    height: auto;
+    width:360px;
+}
+
+div{
+    text-align: center;
 }
 
 ul{
