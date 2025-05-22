@@ -1,3 +1,4 @@
+/*colors and whatnot*/
 body {
     background-color:#3E517A;
 }
@@ -25,6 +26,27 @@ p{
     -webkit-text-size-adjust: 16pt;
 }
 
+a{
+    display: block;
+    padding: 8px;
+    color: #FFC857;
+    text-align: left;
+}
+
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: dotted;
+    color: #FFC857;
+}
+
+li a:hover {
+  background-color:#ff8360;
+  color: #FFC857;
+}
+
+/* general formatting */
 img{
     height: auto;
     width:500px;
@@ -47,36 +69,25 @@ li{
     float: left;
 }
 
-a{
-    display: block;
-    padding: 8px;
-    color: #FFC857;
-    text-align: left;
-}
+/* classes */
 
-iframe {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: dotted;
-    color: #FFC857;
-}
 
-li a:hover {
-  background-color:#ff8360;
-  color: #FFC857;
-}
-
-.active {
-  background-color: #1B998B;
-}
-
-.hook {
-    font-weight: bold;
-    font-style: italic;
-}
-.bottom {
+.bottom { /*artifact for the bottom sizing*/
     width: 2000px;
     max-width: 100%;
     max-height: 100%;
+}
+
+.active { /*home tab coloring*/
+  background-color: #1B998B;
+}
+
+.flex { /*spaces out the navigation buttons*/
+    display: flex;
+    text-align: center;
+    gap: var(--gap,.5rem);
+}
+
+.flics{
+    max-height: 400px;
 }
