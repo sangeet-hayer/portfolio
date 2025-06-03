@@ -72,6 +72,15 @@ div.certifications {
     gap: 60px;
 }
 
+div.resume{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+}
+
 ul{
     list-style-type: none;
     margin: 0;
