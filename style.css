@@ -111,6 +111,10 @@ li{
     text-align: center;
     gap: var(--gap,.5rem);
     align-items: center;
+    
+    
+    margin-left: auto;
+
 }
 
 .flics{
@@ -123,4 +127,90 @@ li{
     height: auto;
     row-gap: 60px;
     gap: 60px;
+}
+
+.navbar{
+    background: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA2L3JtNTI0LWJnLTAyNmQteC5qcGc.jpg') repeat top center ; 
+    background-size: 100px 100px;
+    height: 100px;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    z-index: 999999;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    margin-left: auto;
+    z-index: 999999;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+/*Hamburger in the nav bar*/
+@media(max-width:768px){
+    .hamburger{
+        display: block;
+        margin-left: auto;
+    }
+   
+    .hamburger.active .bar:nth-child(2){
+        opacity:0;
+        background-color: white;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        background-color: white;
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: white;
+    }
+   
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+         background-color:  url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA2L3JtNTI0LWJnLTAyNmQteC5qcGc.jpg') repeat top center ; 
+        background-size: 100px 100px;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+   
+    .nav-item{
+        margin: 16px 0;
+    }
+   
+    .nav-menu.active{
+        left: 0;
+    }
 }
